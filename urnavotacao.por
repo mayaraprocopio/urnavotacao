@@ -8,12 +8,11 @@ programa
 		inteiro votoNulo = 0
 		inteiro encerraVotacao
 		inteiro percentualVotos
-		real porcentagemCandidato1, porcentagemCandidato2, porcentagemCandidato3, 
+		real porcentagemCandidato1, porcentagemCandidato2, porcentagemCandidato3
 		escreva ("Digite o numero do candidato: ")
 		leia(numeroCandidato)
 
-		
-
+		enquanto( voto != 0){
 		escolha(numeroCandidato) {
 		
 	
@@ -42,18 +41,18 @@ programa
 				
 			caso contrario:
 				escreva ("Nenhum candidato foi votado")
-
-		enquanto(  <= 0)
+		
 		}
     }	
 }
+
 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 295; 
+ * @POSICAO-CURSOR = 862; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
