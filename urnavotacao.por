@@ -1,59 +1,91 @@
 programa
 {
+	
     funcao inicio()
     {
-		inteiro candidato1 = 0, candidato2 = 0, candidato3 = 0
-		inteiro numeroCandidato
-		inteiro votoBranco = 0
-		inteiro votoNulo = 0
+		cadeia candidato1 = "João", candidato2 = "Maria", candidato3 = "Pedro"
+		inteiro voto
+		inteiro contagem_votoBranco = 0
+		inteiro contagem_votoNulo = 0
+		inteiro contagemJoao = 0
+		inteiro contagemMaria = 0
+		inteiro contagemPedro = 0
 		inteiro encerraVotacao
-		inteiro percentualVotos
-		real porcentagemCandidato1, porcentagemCandidato2, porcentagemCandidato3
-		escreva ("Digite o numero do candidato: ")
-		leia(numeroCandidato)
+		real porcentualVotos
+		real soma = contagem_votoBranco + contagem_votoNulo + contagemJoao + contagemMaria + contagemPedro
+		real porcentagemCandidato1=0.0, porcentagemCandidato2=0.0, porcentagemCandidato3=0.0, porcentagemNulo=0.0, porcentagemBranco=0.0
+	
+		
+		escreva ("Digite o numero do candidato:  ")
+		leia(voto)
 
 		enquanto( voto != 0){
-		escolha(numeroCandidato) {
+			escolha(voto) {
+			
 		
-	
-			caso 1:
-				candidato1++
-				escreva (" Candidato 1 recebeu um voto")
-				pare
-			caso 2:
-				candidato2++
-				escreva (" Candidato 2 recebeu um voto")
-				pare
-			caso 3:
-				candidato3++
-				escreva ("Candidato 3 recebeu um voto")
-				pare
-			caso 6:
-				votoBranco++
-				escreva(" Voto em branco")
-				pare
-			caso 9:
-				votoNulo++
-				escreva(" Voto Nulo")
-				pare
-			caso 0:
-				escreva("Encerrar votação")
-				
-			caso contrario:
-				escreva ("Nenhum candidato foi votado")
+				caso 1:
+					contagemJoao++
+					soma++
+					escreva (" Candidato 1 recebeu um voto\n")
+					pare
+				caso 2:
+					contagemMaria++
+					soma++
+					escreva (" Candidato 2 recebeu um voto\n")
+					pare
+				caso 3:
+					contagemPedro++
+					soma++
+					escreva ("Candidato 3 recebeu um voto\n")
+					pare
+				caso 6:
+					contagem_votoBranco++
+					soma++
+					escreva(" Voto em branco\n")
+					pare
+				caso 9:
+					contagem_votoNulo++
+					soma++
+					escreva(" Voto Nulo\n")
+					pare
+				caso 0:
+					escreva("Encerrar votação")
+					
+				caso contrario:
+					escreva ("Nenhum candidato foi votado")
+					pare
 		
 		}
-    }	
+		escreva("Digite o numero do candidato:  ")
+    		leia(voto)
+
+    	}
+    	escreva(" Encerrada as Eleições! Aguarde contagem dos votos.")
+    
+	
+        	
+	porcentagemCandidato1 = (contagemJoao/soma) * 100
+	porcentagemCandidato2 = (contagemMaria/soma) * 100
+	porcentagemCandidato3 = (contagemPedro/soma) * 100
+	porcentagemNulo = (contagem_votoNulo/soma) * 100
+	porcentagemBranco = (contagem_votoBranco/soma) * 100
+
+
+    }
+	
+	
+
+	
+		
+    
 }
-
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 862; 
- * @PONTOS-DE-PARADA = ;
+ * @POSICAO-CURSOR = 12; 
+ * @PONTOS-DE-PARADA = 15;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
