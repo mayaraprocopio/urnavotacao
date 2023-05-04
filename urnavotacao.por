@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> mat
     funcao inicio()
     {
 		cadeia candidato1 = "João", candidato2 = "Maria", candidato3 = "Pedro"
@@ -26,7 +26,7 @@ programa
 				caso 1:
 					contagemJoao++
 					soma++
-					escreva (" Candidato 1 recebeu um voto\n")
+					escreva (" Candidato 1", candidato1 , "recebeu um voto\n")
 					pare
 				caso 2:
 					contagemMaria++
@@ -70,6 +70,12 @@ programa
 	porcentagemNulo = (contagem_votoNulo/soma) * 100
 	porcentagemBranco = (contagem_votoBranco/soma) * 100
 
+	se(contagemJoao > contagemMaria e contagemJoao > contagemPedro){
+		escreva("O candidato ",candidato1, 
+	
+		
+	}
+
 
     }
 	
@@ -84,8 +90,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 12; 
- * @PONTOS-DE-PARADA = 15;
+ * @POSICAO-CURSOR = 1864; 
+ * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
